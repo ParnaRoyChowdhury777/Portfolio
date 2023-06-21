@@ -248,7 +248,7 @@ span{
     }
 
 
-    /*............................................Education..............................................*/
+/*............................................Education..............................................*/
     #education
     {
         display: flex;
@@ -258,6 +258,15 @@ span{
         gap: 2rem;
         background: var(--bg-color);
         padding-bottom: 6rem;
+    }
+
+    .result{
+        color: var(--text-color);
+        transition: 0.5s ease-in-out;
+    }
+    .result:hover{
+        font-size: x-large;
+        text-shadow: 0 0 10px var(--text-color);
     }
 
     ul{
@@ -327,7 +336,6 @@ span{
   border-radius: 4px;
   -webkit-transform: translate(0, -55px);
   transform: translate(0, -55px);
-  text-transform: capitalize;
   line-height: 150%;
   color: #efefef;
   font-family: 'Montserrat', sans-serif;
