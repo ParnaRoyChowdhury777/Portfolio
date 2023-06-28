@@ -1003,11 +1003,12 @@ border-radius: 3px
 
   .inputBox input,textarea{
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     outline: none;
     border: 1px solid #333;
     box-shadow: 0 0 5px var(--alt-color);
     background-color: var(--second-bg-color);
+    color: var(--text-color);
   }
    
   .inputBox textarea{
