@@ -1165,4 +1165,28 @@ border-radius: 3px
   border-radius: 30px; 
 }
 
+.contact-btn {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  color: var(--bg-color);
+  border-radius: 5px;
+  background-color: var(--hover-color);
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--hover-color);
+  transition: 0.5s;
+}
 
+.contact-btn:hover {
+  color: var(--hover-color);
+  transition: all 0.5s;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
