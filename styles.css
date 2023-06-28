@@ -31,7 +31,7 @@ body{
     color: var(--text-color);
 }
 
-/*=====================================Hero Section Starts========================================*/
+/*===========================================Hero Section Starts========================================*/
 
 .header{
     position: fixed;
@@ -45,13 +45,12 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    box-shadow: 0 0 10px var(--main-color);
 }
 
 .logo{
     width: 50px;
     height: 50px;
-    /* color: var(--text-color);
-    font-weight: 600; */
 }
 
 .navbar a {
@@ -640,7 +639,7 @@ border-radius: 3px
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 450px;
+    padding-bottom: 500px;
   }
 
   .achievements-container
@@ -805,7 +804,7 @@ border-radius: 3px
   padding: 20px 40px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px var(--main-color);
   border-radius: 8px;
   z-index: 1;
   transform: 0.5s;
@@ -865,8 +864,9 @@ border-radius: 3px
     width: 100%;
     height: 100%;
     transform-style: preserve-3d; 
-    animation: rotate360 50s infinite forwards linear;
+    animation: rotate360 20s infinite forwards linear;
   }
+
   .carousel__face { 
     position: absolute;
     width: 300px;
@@ -885,9 +885,11 @@ border-radius: 3px
   }
   
   
+  
   .carousel__face:nth-child(1) {
     background-image: url("https://images.pexels.com/photos/1141853/pexels-photo-1141853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    transform: rotateY(  0deg) translateZ(430px); }
+    transform: rotateY(  0deg) translateZ(430px);
+   }
   .carousel__face:nth-child(2) { 
     background-image: url("https://images.pexels.com/photos/1258865/pexels-photo-1258865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
       transform: rotateY( 60deg) translateZ(430px); }
@@ -917,4 +919,202 @@ border-radius: 3px
       transform: rotateY(-360deg);
     }
   }
+
+  /*=================================End of achievements section=====================================*/
   
+  /*======================================Contact section starts=====================================*/
+  .contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+    background-color: var(--second-bg-color);
+  }
+
+  .contactUs .contacttitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .contact-box{
+    position: relative;
+    left: 150px;
+    height: 800px;
+    width: 900px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "contact-form contact-map"
+    "contact-form contact-info";
+    grid-gap: 20px;
+    box-shadow: 0 0 10px var(--alt-color);
+    margin: 30px 40px;
+    padding: 50px 50px;
+  }
+
+  .contact{
+    padding: 40px;
+    /* background: var(--text-color); */
+  }
+  
+  .contact-form{
+    grid-area: contact-form;
+    background-color: var(--second-bg-color);
+    padding: 40px;
+    height:700px;
+  }
+
+  .contact-form h3{
+    color: var(--alt-color);
+    font-weight: 500;
+    font-size: 3rem;
+    text-shadow: 0 0 5px var(--alt-color);
+    padding-bottom: 70px;
+  }
+
+  .formBox{
+    position: relative;
+    width: 100%;
+  }
+
+  .formBox .row50{
+    display: flex;
+    gap: 20px;
+  }
+
+  .inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+
+  .formBox .row100 .inputBox{
+    width: 100%;
+  }
+
+  .inputBox span{
+    color: var(--alt-color);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  .inputBox input,textarea{
+    padding: 10px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 1px solid #333;
+    box-shadow: 0 0 5px var(--alt-color);
+    background-color: var(--second-bg-color);
+  }
+   
+  .inputBox textarea{
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+  }
+
+  .inputBox input[type="submit"]{
+    background-color: var(--alt-color);
+    color: var(--text-color);
+    border: none;
+    font-size: 1.7em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+    left: 100px;
+    margin-top: 20px;
+  }
+
+  .inputBox input[type="submit"]:hover{
+    box-shadow: 0 0 15px var(--alt-color);
+  }
+
+  .inputBox ::placeholder{
+    color: #999;
+  }
+
+  .contact-map{
+    grid-area: contact-map;
+    border: 2px solid var(--alt-color);
+    height: 350px;
+    margin-top: 70px;
+  }
+
+  .contact-map:hover{
+    box-shadow: 0 0 20px var(--alt-color);
+  }
+
+  .contact-map iframe{
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-info{
+    grid-area: contact-info;
+    background-color: var(--second-bg-color);
+    height: 50%;
+  }
+
+  .contact-info h3{
+    color: var(--text-color);
+    font-size: 2rem;
+    margin: 40px 0;
+    
+  }
+
+  .contact-info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+  }
+
+  .contact-info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: var(--text-color);
+    background-color: var(--alt-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  .contact-info .infoBox div a{
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+
+  .sci{
+    position: relative;
+    bottom: 200px;
+    left: 370px;
+    background-color: var(--second-bg-color);
+    width: 50px;
+    height: 230px;
+    box-shadow: 0 0 10px var(--alt-color);
+  }
+  .sci li{
+    list-style: none;
+    margin: 5px;
+    font-size: 40px;
+  }
+
+  .sci li a{
+    color: var(--text-color);
+  }
+
+  .sci li a:hover{
+    color: var(--alt-color);
+    text-shadow: 0 0 10px var(--alt-color);
+  }

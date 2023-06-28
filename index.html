@@ -40,7 +40,7 @@
         <div class="home-content">
             <h3>Hi, I am</h3>
             <h1>Parna Roy Chowdhury</h1>
-            <h3>And I'm a <span class="typewriter1">Frontend Developer</span></h3>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
             <p>Welcome to my portfolio website. I am a passionate and ambitious Computer Engineering student currently in my second year of study. With a deep-rooted love for technology and a drive for continuous learning, I am constantly seeking new opportunities to expand my knowledge and skills in this ever-evolving field.</p>
             <div class="social-media">
                 <a href="#"><i class='bx bxl-facebook'></i></a>
@@ -196,7 +196,9 @@
       <h2 class="heading"><span> Projects </span>and<span> Achievements</span></h2>
       <div class="project-container">
         <div class="carousel">
-          <div class="carousel__face"><span>ES-CS291 C Codes</span></div>
+          <div class="carousel__face"><span>ES-CS291 C Codes</span>
+          <a href="#" class="carousel-button">Click me to see</a>
+          </div>
           <div class="carousel__face"><span>Hackerrank Skill Certificate</span></div>
           <div class="carousel__face"><span>JBNSTS Senior Scholar</span></div>
           <div class="carousel__face"><span>Global Edu-Leader Awardee</span></div>
@@ -207,6 +209,87 @@
   </section>
 
 
+  <!--Contact section design-->
+  <section class="contactUs" id="contactUs">
+    <div class="contacttitle">
+      <h2 class="heading">Get in <span>Touch</span></h2>
+    </div>
+    
+    <div class="contact-box">
+      <div class="contact-form">
+        <h3>Thanks for your visit!!</h3>
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <div class="formBox">
+              <div class="row50">
+                <div class="inputBox">
+                  <span>First Name</span>
+                  <input type="text" placeholder="First Name" id="firstname">
+                </div>
+                <div class="inputBox">
+                  <span>Last Name</span>
+                  <input type="text" placeholder="Last Name" id="lastname">
+                </div>
+              </div>
+
+            <div class="row50">
+              <div class="inputBox">
+                <span>Email ID</span>
+                <input type="email" placeholder="Email ID" id="email">
+              </div>
+              <div class="inputBox">
+                <span>Phone No.</span>
+                <input type="text" placeholder="Phone No." id="phone">
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="inputBox">
+                <span>Message</span>
+                <textarea id="textarea" cols="30" rows="10" placeholder="Write a message"></textarea>
+              </div>
+              </div>
+
+              <div class="row100">
+                <div class="inputBox">
+                  <input type="submit" value="Send">
+                </div>
+                </div>
+              </div>
+        </form>
+      </div>
+
+
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3721428.76450039!2d87.85113775!3d24.37407435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1687895789639!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <div class="infoBox">
+          <div>
+            <span><i class='bx bx-current-location'></i></span>
+            <p>59/11/2 Bhupen Roy Road, Behala, Kolkata - 700034</p>
+            </div>
+            <div>
+              <span><i class='bx bx-envelope'></i></span>
+            <a href="mailto: parnaroychowdhury2020@gmail.com">parnaroychowdhury2020@gmail.com</a>
+          </div>
+          <div>
+            <span><i class='bx bx-phone' ></i></span>
+            <a href="tel:+91 6290040136">+91 6290040136</a>
+          </div>
+            <ul class="sci">
+              <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+              <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+              <li><a href="#"><i class='bx bxl-github'></i></a></li>
+              <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    </section>
+
 
 
 
@@ -214,6 +297,35 @@
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+       var typed = new Typed('.multiple-text', {
+      strings: ['Frontend Developer', 'UI-UX Designer', 'AI Enthusiast', 'Junior coder'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true
+    });
+    </script>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script>
+   function sendEmail(){
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "parnaroychowdhury2020@gmail.com",
+      Password : "prc2004.",
+      To : 'parnaroychowdhury2020@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "New Contact form enquiry",
+      Body : "First Name: " + document.getElementById("firstname").value
+            + "Last Name: " + document.getElementById("lastname").value
+            +"<br> Email ID: " + document.getElementById("email").value
+            +"<br> Phone No.: " + document.getElementById("phone").value
+            +"<br> Message: " + document.getElementById("textarea").value
+  }).then(
+    message => alert("Message sent successfully")
+  );
+  }
+  </script>
 
 </body>
 </html>
