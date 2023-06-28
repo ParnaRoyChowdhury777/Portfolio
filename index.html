@@ -218,34 +218,34 @@
     <div class="contact-box">
       <div class="contact-form">
         <h3>Thanks for your visit!!</h3>
-        <form onsubmit="sendEmail(); reset(); return false;">
+        <form action="https://mail.google.com/mail/u/1/#inbox" method="post">
             <div class="formBox">
               <div class="row50">
                 <div class="inputBox">
                   <span>First Name</span>
-                  <input type="text" placeholder="First Name" id="firstname">
+                  <input type="text" placeholder="First Name" id="firstname" autocomplete="off">
                 </div>
                 <div class="inputBox">
                   <span>Last Name</span>
-                  <input type="text" placeholder="Last Name" id="lastname">
+                  <input type="text" placeholder="Last Name" id="lastname" autocomplete="off">
                 </div>
               </div>
 
             <div class="row50">
               <div class="inputBox">
                 <span>Email ID</span>
-                <input type="email" placeholder="Email ID" id="email">
+                <input type="email" placeholder="Email ID" id="email" autocomplete="off">
               </div>
               <div class="inputBox">
                 <span>Phone No.</span>
-                <input type="text" placeholder="Phone No." id="phone">
+                <input type="text" placeholder="Phone No." id="phone" autocomplete="off">
               </div>
             </div>
 
             <div class="row100">
               <div class="inputBox">
                 <span>Message</span>
-                <textarea id="textarea" cols="30" rows="10" placeholder="Write a message"></textarea>
+                <textarea id="textarea" cols="30" rows="10" placeholder="Write a message" autocomplete="off" min="5"></textarea>
               </div>
               </div>
 
@@ -306,7 +306,7 @@
       loop: true
     });
     </script>
-   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
    <script>
    function sendEmail(){
     Email.send({
@@ -325,7 +325,7 @@
     message => alert("Message sent successfully")
   );
   }
-  </script>
+  </script> -->
 
 </body>
 </html>
