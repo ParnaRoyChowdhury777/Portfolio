@@ -210,7 +210,7 @@
 
 
   <!--Contact section design-->
-  <section class="contactUs" id="contactUs">
+  <section class="contact" id="contact">
     <div class="contacttitle">
       <h2 class="heading">Get in <span>Touch</span></h2>
     </div>
@@ -218,7 +218,7 @@
     <div class="contact-box">
       <div class="contact-form">
         <h3>Thanks for your visit!!</h3>
-        <form action="https://mail.google.com/mail/u/1/#inbox" method="post">
+        <form name="submit-to-google-sheet">
             <div class="formBox">
               <div class="row50">
                 <div class="inputBox">
@@ -256,6 +256,7 @@
                 </div>
               </div>
         </form>
+        <span id="msg">Hello</span>
       </div>
 
 
@@ -291,6 +292,17 @@
     </section>
 
 
+    <!--Footer section-->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2023. Made with <i class='bx bxs-heart' style='color:#ff0000' ></i> by Parna Roy Chowdhury | All Rights Reserved.</p>
+    </div>
+    <div class="footer-icontop">
+      <a href="#home"><i class='bx bx-up-arrow-circle'></i></a>
+    </div>
+
+  </footer>
+
 
 
 
@@ -306,27 +318,20 @@
       loop: true
     });
     </script>
-   <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-   <script>
-   function sendEmail(){
-    Email.send({
-      Host : "smtp.gmail.com",
-      Username : "parnaroychowdhury2020@gmail.com",
-      Password : "prc2004.",
-      To : 'parnaroychowdhury2020@gmail.com',
-      From : document.getElementById("email").value,
-      Subject : "New Contact form enquiry",
-      Body : "First Name: " + document.getElementById("firstname").value
-            + "Last Name: " + document.getElementById("lastname").value
-            +"<br> Email ID: " + document.getElementById("email").value
-            +"<br> Phone No.: " + document.getElementById("phone").value
-            +"<br> Message: " + document.getElementById("textarea").value
-  }).then(
-    message => alert("Message sent successfully")
-  );
-  }
-  </script> -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGGuPWECzCZ-mFGWNWvMWb9ufbVthT4Wv1X93T7-X6N77OCZyRtidFIB8-DqRktAkY/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
+
+  
 </body>
 </html>
 
