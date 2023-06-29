@@ -955,6 +955,7 @@ border-radius: 3px
     box-shadow: 0 0 10px var(--alt-color);
     margin: 30px 40px;
     padding: 50px 50px;
+    border-radius: 20px;
   }
 
   
@@ -1007,6 +1008,7 @@ border-radius: 3px
     font-size: 1.6rem;
     outline: none;
     border: 1px solid #333;
+    border-radius: 15px;
     box-shadow: 0 0 5px var(--alt-color);
     background-color: var(--second-bg-color);
     color: var(--text-color);
@@ -1043,6 +1045,7 @@ border-radius: 3px
   .contact-map{
     grid-area: contact-map;
     border: 2px solid var(--alt-color);
+    border-radius: 10px;
     height: 350px;
     margin-top: 70px;
   }
@@ -1054,6 +1057,7 @@ border-radius: 3px
   .contact-map iframe{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
   }
 
   .contact-info{
@@ -1097,12 +1101,14 @@ border-radius: 3px
 
   .sci{
     position: relative;
-    bottom: 200px;
+    bottom: 220px;
     left: 380px;
     background-color: var(--second-bg-color);
     width: 50px;
-    height: 230px;
+    height: 240px;
     box-shadow: 0 0 10px var(--alt-color);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .sci li{
     list-style: none;
@@ -1124,26 +1130,33 @@ border-radius: 3px
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background-color: var(--main-color);
-    opacity: 0.5;
-    color: var(--bg-color);
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
   }
   
   .footer-text p{
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .footer-icontop a{
+    position: relative;
+    left: 320px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: .8rem;
+    border-radius: 50%;
+    background: var(--main-color);
+    transition: .5s ease;
+  }
+
+  .footer-icontop a:hover{
+    box-shadow: 0 0 20px var(--main-color) ;
   }
 
   .footer-icontop a i{
-    position: relative;
-    left: 390px;
-    font-size: 5rem;
+    font-size: 2rem;
     color: var(--bg-color);
   }
 
