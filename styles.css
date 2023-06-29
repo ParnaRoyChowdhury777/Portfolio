@@ -1116,7 +1116,6 @@ border-radius: 3px
 
   .sci li a:hover{
     color: var(--alt-color);
-    text-shadow: 0 0 10px var(--alt-color);
   }
 
   .footer{
@@ -1171,7 +1170,10 @@ border-radius: 3px
   font-size: 2rem;
   border-radius: 30px;
   padding: 1rem 2.8rem;
-  box-shadow: 0 0 10px var(--alt-color);
   margin-left: 200px;
   cursor: pointer;
+}
+
+.contact-btn:hover, input:hover, textarea:hover {
+  box-shadow: 0 0 16px var(--alt-color);
 }
