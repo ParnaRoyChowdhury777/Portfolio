@@ -48,6 +48,10 @@ body{
     box-shadow: 0 0 10px var(--main-color);
 }
 
+.header.sticky {
+  border-bottom: 1rem solid rgba(0, 0, 0, 0.2);
+}
+
 .logo{
     width: 50px;
     height: 50px;
@@ -944,7 +948,7 @@ border-radius: 3px
     position: relative;
     left: 65px;
     height: 800px;
-    width: 1100px;
+    width: 1000px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 5fr 4fr;
@@ -954,7 +958,7 @@ border-radius: 3px
     grid-gap: 20px;
     box-shadow: 0 0 10px var(--alt-color);
     margin: 30px 40px;
-    padding: 50px 50px;
+    padding: 70px 70px;
     border-radius: 20px;
   }
 
@@ -962,7 +966,7 @@ border-radius: 3px
   .contact-form{
     grid-area: contact-form;
     background-color: var(--second-bg-color);
-    padding: 40px;
+    padding: 10px;
     height:700px;
   }
 
@@ -977,6 +981,8 @@ border-radius: 3px
   .formBox{
     position: relative;
     width: 100%;
+    left: 0.2px;
+    bottom: 20px;
   }
 
   .formBox .row50{
@@ -992,7 +998,7 @@ border-radius: 3px
   }
 
   .formBox .row100 .inputBox{
-    width: 100%;
+    width: 90%;
   }
 
   .inputBox span{
@@ -1020,38 +1026,38 @@ border-radius: 3px
     margin-bottom: 10px;
   }
 
-  .inputBox input[type="submit"]{
-    background-color: var(--alt-color);
-    color: var(--text-color);
-    border: none;
-    font-size: 1.7em;
-    max-width: 120px;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 30px;
-    position: relative;
-    left: 100px;
-    margin-top: 20px;
-  }
-
-  .inputBox input[type="submit"]:hover{
-    box-shadow: 0 0 15px var(--alt-color);
-  }
 
   .inputBox ::placeholder{
     color: #999;
   }
 
+  .contact-btn{
+    background-color: var(--alt-color);
+    color: var(--bg-color);
+    font-size: 2rem;
+    border-radius: 30px;
+    padding: 1rem 2.8rem;
+    margin-left: 180px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  
+  .contact-btn:hover, input:hover, textarea:hover {
+    box-shadow: 0 0 16px var(--alt-color);
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+  }
+
   .contact-map{
     grid-area: contact-map;
-    border: 2px solid var(--alt-color);
     border-radius: 10px;
     height: 350px;
-    margin-top: 70px;
+    margin-top: 40px;
+    transition: all 0.5s ease-in-out;
   }
 
   .contact-map:hover{
-    box-shadow: 0 0 20px var(--alt-color);
+    box-shadow: 0 0 40px var(--alt-color);
   }
 
   .contact-map iframe{
@@ -1098,11 +1104,10 @@ border-radius: 3px
     text-decoration: none;
   }
 
-
   .sci{
     position: relative;
-    bottom: 220px;
-    left: 380px;
+    bottom: 230px;
+    left: 360px;
     background-color: var(--second-bg-color);
     width: 50px;
     height: 240px;
@@ -1130,24 +1135,27 @@ border-radius: 3px
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background-color: var(--bg-color);
-    color: var(--main-color);
-    box-shadow: 0 0 10px var(--main-color);
+    background-color: var(--main-color);
+    opacity: 0.5;
+    color: var(--bg-color);
+    box-shadow: 0 0 10px var(--alt-color);
+    height: 100px;
   }
   
   .footer-text p{
     font-size: 2rem;
+    font-weight: 900;
   }
 
   .footer-icontop a{
     position: relative;
-    left: 320px;
+    left: 280px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: .8rem;
     border-radius: 50%;
-    background: var(--main-color);
+    background: var(--bg-color);
     transition: .5s ease;
   }
 
@@ -1157,7 +1165,7 @@ border-radius: 3px
 
   .footer-icontop a i{
     font-size: 2rem;
-    color: var(--bg-color);
+    color: var(--main-color);
   }
 
 /*======================================== Scrollbar================================*/ 
@@ -1177,16 +1185,42 @@ border-radius: 3px
   border-radius: 30px; 
 }
 
-.contact-btn{
-  background-color: var(--alt-color);
-  color: var(--bg-color);
-  font-size: 2rem;
-  border-radius: 30px;
-  padding: 1rem 2.8rem;
-  margin-left: 200px;
-  cursor: pointer;
+/*=====================BREAKPOINTS====================*/
+@media (max-width : 1200px) {
+  html{
+    font-size: 55%;
+  }
 }
 
-.contact-btn:hover, input:hover, textarea:hover {
-  box-shadow: 0 0 16px var(--alt-color);
+@media (max-width : 991px) {
+  .header, .footer {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 10rem 3% 2rem;
+  }
+}
+
+@media (max-width : 768px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  .navbar.active{
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
 }
