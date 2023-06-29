@@ -1173,4 +1173,5 @@ border-radius: 3px
   padding: 1rem 2.8rem;
   box-shadow: 0 0 10px var(--alt-color);
   margin-left: 200px;
+  cursor: pointer;
 }
