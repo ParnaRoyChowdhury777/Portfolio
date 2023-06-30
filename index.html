@@ -21,8 +21,7 @@
 
   <!--header design-->
   <header class="header">
-    <img src="/Assets/Images/favicon.ico.png" class="logo" alt="PRC"></img>
-
+    <h1 style="font-size: 40px;"><span>P</span>RC</h1>
     <div class="bx bx-menu" id="menu-icon"></div>
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
@@ -31,6 +30,10 @@
       <a href="#skills">Skills</a>
       <a href="#achievements">Achievements</a>
       <a href="#contact">Contact</a>
+      <div class="toggletheme">
+        <i class="bx bx-sun"></i>
+        <i class="bx bx-moon"></i>
+      </div>
     </nav>
   </header>
 
@@ -61,6 +64,7 @@
   <!--about section design-->
   <section class="about" id="about">
     <h2 class="heading">About <span>Me</span></h2>
+    <div class="about-container">
     <div class="about-img">
       <img src="/Assets/Images/self_image1.jpeg" alt="PARNA">
       <span class="circle-spin"></span>
@@ -69,7 +73,7 @@
       <p>My journey in Computer Engineering has equipped me with a strong foundation in programming languages such as C
         and C++, as well as hands-on experience with various software development tools and methodologies. From building
         web applications to exploring data structures and algorithms, I have enjoyed every aspect of my coursework and
-        have consistently achieved outstanding results.<span id="dots">...</span><span id="more"><br>Beyond the
+        have consistently achieved outstanding results.<br>Beyond the
           classroom, I actively engage in personal projects and participate in coding competitions to challenge myself
           and further refine my problem-solving abilities. These experiences have not only honed my technical skills but
           have also fostered my ability to work effectively in a team and adapt to new environments.<br>
@@ -86,8 +90,8 @@
 
         </span></p>
 
-      <button onclick="myFunction()" id="myBtn">Read more</button>
-
+      
+      </div>
     </div>
   </section>
 
@@ -218,18 +222,32 @@
     </div>
 
     <h2 class="heading"><span> Projects </span>and<span> Achievements</span></h2>
-    <div class="project-container">
-      <div class="carousel">
-        <div class="carousel__face"><span>ES-CS291 C Codes</span>
-          <a href="#" class="carousel-button">Click me to see</a>
-        </div>
-        <div class="carousel__face"><span>Hackerrank Skill Certificate</span></div>
-        <div class="carousel__face"><span>JBNSTS Senior Scholar</span></div>
-        <div class="carousel__face"><span>Global Edu-Leader Awardee</span></div>
-        <div class="carousel__face"><span>A try</span></div>
-        <div class="carousel__face"><span>Woow</span></div>
+   <div class="work-list">
+    <div class="work">
+      <img src="/Assets/Images/19.jpg">
+      <div class="layer">
+        <h3>JBNSTS Award</h3>
+        <p>This is a National Science Talent Search Award which recognizes exceptional young minds in the field of science and aims to foster scientific curiosity in the next generation of scientific innovators.</p>
+          <a href="#"><i class='bx bx-link-external'></i></a>
       </div>
     </div>
+    <div class="work">
+      <img src="/Assets/Images/Global Award 2020.jpg">
+      <div class="layer">
+        <h3>Global Award 2020</h3>
+        <p>I received this award as a recognition of my class X board examination results.</p>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+    </div>
+    <div class="work">
+      <img src="https://th.bing.com/th/id/OIP.tqQJmEmm8meMy522bz31XQHaEM?w=281&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+      <div class="layer">
+        <h3>ESCS291-C-CODES</h3>
+        <p>I created a github repository containing all the C codes I practised in my 2nd semester.</p>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+      </div>
+    </div>
+   </div>
   </section>
 
 
@@ -339,6 +357,7 @@
 
   <script src="script.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script>
     var typed = new Typed('.multiple-text', {
       strings: ['Frontend Developer', 'UI-UX Designer', 'AI Enthusiast', 'Junior coder'],
@@ -348,6 +367,21 @@
       loop: true
     });
   </script>
+<script>
+  ScrollReveal({
+  reset: true,
+  distance: '80px',
+  duration: 2000,
+  delay: 200 
+ });
+
+ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ ScrollReveal().reveal('.home-image, .container, .profession, .work-list, .contact-box', { origin: 'bottom' });
+ ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ 
+</script>
+
 
 
 </body>

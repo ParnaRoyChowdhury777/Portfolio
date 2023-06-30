@@ -1,20 +1,3 @@
-/*======read more section of about=======*/
-
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
 
 /*====================================Toggle icon navbar=========================*/
 let menuIcon = document.querySelector('#menu-icon');
@@ -46,7 +29,7 @@ window.onscroll = () => {
       });
     };
   });
-};
+
 
 
 /*===========================Sticky navbar=================================*/
@@ -54,5 +37,15 @@ let header = document.querySelector('header');
 header.classList.toggle('sticky' , window.scrollY > 100);
 
 /*===============Remove toggle icon and navbar when click navbar link(scroll)=======================*/
+
 menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');
+};
+
+
+/*======================Light and Dark Theme JS====================*/
+
+const toggletheme = document.querySelector('.toggletheme');
+toggletheme.addEventListener('click' , function(){
+  document.body.classList.toggle('light-mode');
+});
