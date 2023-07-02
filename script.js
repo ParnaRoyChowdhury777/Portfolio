@@ -43,9 +43,4 @@ navbar.classList.remove('active');
 };
 
 
-/*======================Light and Dark Theme JS====================*/
 
-const toggletheme = document.querySelector('.toggletheme');
-toggletheme.addEventListener('click' , function(){
-  document.body.classList.toggle('light-mode');
-});
