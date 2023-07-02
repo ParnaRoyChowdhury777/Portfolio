@@ -78,34 +78,7 @@ body{
     margin-right: 550px;
 } 
 
-.toggletheme{
-  position: relative;
-}
 
-.toggletheme i{
-  position:relative;
-  font-size: 30px;
-  top: 50%;
-  left: 110%;
-  transform: translate(-50%,-50%);
-  cursor: pointer;
-}
-.bx-sun{
-  display: block;
-  }
-.bx-moon{
-  display: none;
-}
-
-
-
-.light-mode .bx-moon{
-  display: block;
-}
-
-.light-mode .bx-sun{
-  display: none;
-}
 
 
 section {
@@ -1241,12 +1214,3 @@ border-radius: 3px
   }
 }
 
-
-
-.light-mode{
-     --bg-color: #efefef;
-    --second-bg-color: rgb(222, 168, 118);
-    --text-color: #020202;
-    --main-color: rgb(255, 0, 123); 
-    --alt-color: rgb(231, 23, 61);
-}
