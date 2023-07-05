@@ -138,30 +138,50 @@
 }
 
 .skills .container {
-  width: 241px;
-  margin-left: 48px;
+  width: 303px;
+  margin-left: 59px;
 }
 
 .skills .bar-container .bar {
   width: 18px;
 }
 
+.skills .titles span {
+    transform: rotate(270deg);
+}
+
 .skills .profession {
   flex-direction: column;
 }
 
-.skills .profession .text {
-  position: relative;
-  bottom: 800px;
-  right: -25px;
+.skills .profession .circle {
+  margin-bottom: 73px;
+  margin-right: 56px;
+
 }
 
+.skills .profession .text {
+  position: relative;
+  left: 0px;
+  top: -52px;
+}
 
+.skills .profession #diligent, .skills .profession #teamwork {
+  margin-right: 22px;
+}
+
+/*=================================Contact=============================*/
 .contact .contact-box{
   position: relative;
   left: -113px;
   width: 362px;
-  height: 1500px;
+  height: 1396px;
+  padding-bottom: 0;
+  padding-top: 49px;
+}
+
+.contact .contact-form h3{
+  padding-bottom: 50px;
 }
 
 .contact .contact-box .contact-form {
@@ -171,23 +191,42 @@
 }
 
 .contact .contact-box .contact-form .inputBox textarea {
-  width: 253px;
+  width: 326px;
+}
+
+.contact .contact-btn {
+  margin-left: 119px;
 }
 
 .contact .contact-map{
-  height: 243px;
+  height: 237px;
   position: relative;
-    right: 295px;
-    top: 716px;
+    right: 368px;
+    top: 669px;
+    width: 264px;
 }
 
 .contact .contact-map iframe {
-  width: 73%;
   height: 97%;
 }
-.contact .contact-btn {
-  margin-left: 75px;
+
+.contact .contact-info {
+  position: relative;
+  right: 400px;
+  top: 200px;
 }
+
+.contact .contact-info .sci {
+  display: flex;
+  position: relative;
+  bottom: -7px;
+  left: 68px;
+  width: 204px;
+  height: 58px;
+  border-radius: 20px;
+}
+
+
 }
 
 /*---------------------------------Responsive ---------------------------------------------------ENDS---------*/
