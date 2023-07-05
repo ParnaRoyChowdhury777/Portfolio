@@ -27,6 +27,8 @@
     overflow-x: hidden;
   }
 
+  
+
   #home,
   #about,
   #education,
@@ -40,7 +42,7 @@
   }
 
   ::-webkit-scrollbar {
-    width: 0;
+    display: none;
   }
   .html {
     font-size: 80%;
@@ -54,8 +56,17 @@
     overflow-x: hidden;
   }
 
+  #about .heading,
+  #education .heading,
+  #skills .heading,
+  #achievements .heading,
+  #contact .heading{
+    font-size: 4.5rem;
+  }
+
   #home {
     padding-left: 25px;
+    padding-right: 25px;
     padding-top: 5rem;
     flex-direction: column;
   }
@@ -87,6 +98,7 @@
   }
 
   /*About---------------------*/
+
   .about-container {
     display: flex;
     flex-direction: column;
@@ -95,11 +107,87 @@
   #abt {
    text-align: center; 
    margin: 0;
+   padding: 0 15px;
   }
   
   .about-btn {
     margin-top: 3.5rem;
   }
+
+  /*----------Education--------------*/
+  #education ul{
+    position: relative;
+    left: 15%;
+    height: 2000px;
+  }
+
+  #education ul li:first-child .cont {
+       top: 2%;
+       width: 290px;
+       height: 750px;
+  }
+
+  #education ul li:nth-child(2) .cont {
+    position: relative;
+    left: 10%;
+    top: 1000px;
+  }
+
+  #education ul li .cont {
+    height: 950px;
+}
+
+.skills .container {
+  width: 241px;
+  margin-left: 48px;
+}
+
+.skills .bar-container .bar {
+  width: 18px;
+}
+
+.skills .profession {
+  flex-direction: column;
+}
+
+.skills .profession .text {
+  position: relative;
+  bottom: 800px;
+  right: -25px;
+}
+
+
+.contact .contact-box{
+  position: relative;
+  left: -113px;
+  width: 309px;
+  height: 1500px;
+}
+
+.contact .contact-box .contact-form {
+  width: 247px;
+  position: relative;
+  right: 46px;
+}
+
+.contact .contact-box .contact-form .inputBox textarea {
+  width: 253px;
+}
+
+.contact .contact-map{
+  height: 243px;
+  position: relative;
+    right: 295px;
+    top: 716px;
+}
+
+.contact .contact-map iframe {
+  width: 73%;
+  height: 97%;
+}
+.contact .contact-btn {
+  margin-left: 75px;
+}
 }
 
 /*---------------------------------Responsive ---------------------------------------------------ENDS---------*/
