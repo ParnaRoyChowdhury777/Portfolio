@@ -260,8 +260,7 @@
 
 /*=================================Contact=============================*/
 .contact .contact-box{
-  position: relative;
-  left: -118px;
+  margin: 0 -169px;
   width: 365px;
   height: 1396px;
   padding-bottom: 0;
