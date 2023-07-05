@@ -5,7 +5,7 @@ let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('iconactive');
+  navbar.classList.toggle('active');
 }
 
 
@@ -31,15 +31,16 @@ window.onscroll = () => {
   });
 
 
-
+ 
 /*===========================Sticky navbar=================================*/
 let header = document.querySelector('header');
-header.classList.toggle('sticky' , window.scrollY > 100);
+header.classList.toggle('sticky' , window.scrollY > 400);
 
 /*===============Remove toggle icon and navbar when click navbar link(scroll)=======================*/
 
 menuIcon.classList.remove('bx-x');
-navbar.classList.remove('iconactive');
+navbar.classList.remove('active');
+
 };
 
 
