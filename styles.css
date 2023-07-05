@@ -261,7 +261,7 @@
 /*=================================Contact=============================*/
 .contact .contact-box{
   margin: 29px -169px;
-  width: 365px;
+  width: 359px;
   height: 1396px;
   padding-bottom: 0;
   padding-top: 49px;
@@ -272,13 +272,13 @@
 }
 
 .contact .contact-box .contact-form {
-  width: 328px;
+  width: 321px;
   position: relative;
   right: 63px;
 }
 
 .contact .contact-box .contact-form .inputBox textarea {
-  width: 326px;
+  width: 320px;
 }
 
 .contact .contact-btn {
