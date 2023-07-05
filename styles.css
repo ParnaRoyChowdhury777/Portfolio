@@ -150,6 +150,39 @@
     transform: rotate(270deg);
 }
 
+ #html {
+  position: relative;
+  right: 32px;
+}
+
+
+ #css{
+  position: relative;
+  right: 20px;
+}
+
+ #javascript{
+  position: relative;
+    right: 47px;
+    top: 20px;
+}
+
+ #c{
+  position: relative;
+    right: 66px;
+}
+
+#cplus {
+  position: relative;
+  right: 45px;
+}
+
+ #python {
+  position: relative;
+    right: 42px;
+    top: 7px;
+}
+
 .skills .profession {
   flex-direction: column;
 }
