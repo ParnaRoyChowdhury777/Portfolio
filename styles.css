@@ -94,31 +94,11 @@
     margin-top: 5rem;
   }
 
-  header #menu-icon{
-    display: block;
-    margin-left: 262px;
-  }
-
-  .navbar {
-    position: absolute;
-    flex-direction: column;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem 3%; 
-    background: var(--bg-color);
-    display: none;
-  }
-
-  .navbar a{
-    padding-bottom: 10px;
-    display: none;
-  }
-
-  .navbar.active {
-    display: none;
+  span.typed-cursor {
+    opacity: 0;
   }
   
+
 
   .home-content h3 {
     display: flex;
@@ -372,6 +352,7 @@ body{
     color: var(--text-color);
     display: none;
     margin-right: 550px;
+
 } 
 
 

@@ -5,7 +5,7 @@ let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active');
+  navbar.classList.toggle('iconactive');
 }
 
 
@@ -39,7 +39,7 @@ header.classList.toggle('sticky' , window.scrollY > 100);
 /*===============Remove toggle icon and navbar when click navbar link(scroll)=======================*/
 
 menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
+navbar.classList.remove('iconactive');
 };
 
 
