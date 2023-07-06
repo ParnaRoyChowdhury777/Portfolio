@@ -973,7 +973,7 @@ span {
   height: 100%;
   background: conic-gradient(
     var(--main-color) calc(var(--percentage) * 1%),
-    var(--text-color) 0
+    #efefef 0
   );
   mask: radial-gradient(white 55%, transparent 0);
   mask-mode: alpha;
