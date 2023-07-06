@@ -20,11 +20,11 @@
 }
 
 .light-theme {
-  --bg-color: #fbfbfb;
-  --second-bg-color: rgb(233 222 234);
-  --main-color: #c15a8f;
-  --text-color: rgb(251 110 180);
-  --alt-color: #c95581;
+  --bg-color: #F8E5E5;
+  --second-bg-color: #eec5c7;
+  --main-color: #EF0D50;
+  --text-color: #d8184b;
+  --alt-color: #eb2883;
 
   .home .home-image #light{
     display: block;
@@ -1245,7 +1245,7 @@ span {
 
 .layer a {
   margin-top: 10px;
-  color: #efefef;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
