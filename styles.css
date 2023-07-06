@@ -82,6 +82,10 @@
   margin-top: 7rem;
 }
 }
+
+.footer p i {
+  color: white;
+}
 }
 
 .light-theme #themesun{
