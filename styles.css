@@ -184,7 +184,7 @@
 
   #education ul #school {
        top: 2%;
-       width: 290px;
+       width: 73vw;
        height: 710px;
   }
 
@@ -192,7 +192,7 @@
     left: 40px;
     position: relative;
     top: 836.5px;
-    width: 290px;
+    width: 73vw;
     height: 640px;
   }
 
@@ -291,8 +291,8 @@
 /*=================================Contact=============================*/
 .contact .contact-box{
   margin: 29px -169px;
-  width: 349px;
-  height: 1396px;
+  width: 86vw;
+  height: 240vh;
   padding-bottom: 0;
   padding-top: 49px;
 }
@@ -1470,5 +1470,72 @@ border-radius: 3px
   border-radius: 30px; 
 }
 
+/* =================================Pre loader======================================
+.loader {
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  transition: all 1s ease;
+}
 
+.loader-text {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 99999;
+}
 
+.loading {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 70pt;
+  text-align: center;
+  height: 120px;
+  line-height: 110px;
+  display: block;
+}
+
+.wave {
+  background-image: url("https://th.bing.com/th/id/R.9d1db220e8a1f80f30ad15288e513220?rik=OjDVp9imKB7ZRw&riu=http%3a%2f%2fil8.picdn.net%2fshutterstock%2fvideos%2f21678091%2fthumb%2f10.jpg%3fi10c%3dimg.resize(height%3a160)&ehk=sdWi1QtpDJe4JFX%2fLWZYCZRTMf1UKIh8qEHAoxqNjHk%3d&risl=&pid=ImgRaw&r=0");
+  /* -moz-background-clip: text; */
+  /* -webkit-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: wave-animation 1s infinite linear, loading-animation 10s infinite linear alternate;
+  background-size: 200px 100px;
+  background-repeat: repeat-x;
+  opacity: 1;
+}
+
+@keyframes wave-animation {
+  0% {
+      background-position: 0 bottom;
+  }
+  100% {
+    background-position: 200px bottom;
+  }
+}
+
+@keyframes loading-animation{
+  0% {
+    background-size: 200px 0;
+  }
+  100% {
+    background-size: 200px 200px;
+  }
+}  
+
+ .preload-finish{
+  opacity: 0;
+  pointer-events: none;
+} */
