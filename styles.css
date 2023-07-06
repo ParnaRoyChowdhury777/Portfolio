@@ -219,12 +219,12 @@
     margin-top: 4.5rem;
   }
 
-  .home-image img {
+  .home-image #dark, .home-image #light{
     min-width: 400px;
     border-radius: 50%;
     margin-top: 3rem;
   }
-  .home-image {
+  .home-image #dark, .home-image #light {
     margin-top: 5rem;
   }
 
