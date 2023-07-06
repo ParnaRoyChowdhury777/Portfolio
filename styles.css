@@ -19,6 +19,89 @@
     --alt-color: rgb(23, 179, 231);
 }
 
+.light-theme {
+  --bg-color: #fbfbfb;
+  --second-bg-color: rgb(233 222 234);
+  --main-color: #c15a8f;
+  --text-color: rgb(251 110 180);
+  --alt-color: #c95581;
+
+  .home .home-image #light{
+    display: block;
+  }
+
+  .home .home-image #dark {
+    display: none;
+  }
+
+  .skills .container{
+    background-color: #d1a7c6;
+  }
+
+  .skills .container .base {
+    background-color: #5c05355e;
+  }
+  
+  .skills .container .bar-container .bar{
+    background-color: #8e126080;
+  }
+
+  .skills .container .bar-container .bar::before{
+    background-color: #86115778;
+  }
+
+  .skills .container .bar-container .bar::after{
+    background-color: #a6196878 ;
+  }
+
+  .achievements-container .achievements-box:nth-child(1):before,
+.achievements-container .achievements-box:nth-child(1):after
+{
+    background: linear-gradient(315deg, #eaa3c7, #fad1e6);
+}
+
+.achievements-container .achievements-box:nth-child(2):before,
+.achievements-container .achievements-box:nth-child(2):after
+{
+    background: linear-gradient(315deg, #eaa3c7, #fad1e6);
+}
+
+.achievements-container .achievements-box:nth-child(3):before,
+.achievements-container .achievements-box:nth-child(3):after
+{
+    background: linear-gradient(315deg, #eaa3c7, #fad1e6);
+}
+}
+
+.light-theme #themesun{
+  display: none
+}
+
+.light-theme #thememoon{
+  display: block;
+}
+
+#themesun {
+    font-size: 2.9rem;
+    cursor: pointer;
+    bottom: 27vw;
+}
+
+#thememoon {
+    font-size: 2.3rem;
+    cursor: pointer;
+   display: none;
+}
+
+.home .home-image #light{
+  display: none;
+}
+
+.toggleSwitch {
+  position: relative;
+  bottom: 22vw;
+}
+
 /*--------------------------------------Responsive --------------------------------------------------------*/
 
 @media(max-width : 1200px){
@@ -660,7 +743,7 @@ font-size: 200%;
 line-height:35px;
 text-align: center;
 background-color: var(--main-color);
-color: #fff;
+color: var(--text-color);
 position:absolute;
 }
 
@@ -672,7 +755,7 @@ padding: 25px 10px 10px;
 border: 2px solid transparent;
 border-radius: 4px;
 line-height: 150%;
-color: #efefef;
+color: var(--text-color);
 position: absolute;
 top: 22px;
 }
@@ -1097,7 +1180,7 @@ border-radius: 3px
   border-radius: 8px;
   z-index: 1;
   transform: 0.5s;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .achievements-container .achievements-box:hover .achievements-content
@@ -1109,7 +1192,6 @@ border-radius: 3px
 .achievements-container .achievements-box .achievements-content h2
 {
   font-size: 2em;
-  color: #fff;
   margin-bottom: 10px;
   font-weight: 900;
 }
@@ -1300,7 +1382,6 @@ border-radius: 3px
     padding: 10px;
     font-size: 1.6rem;
     outline: none;
-    border: 1px solid #333;
     border-radius: 15px;
     box-shadow: 0 0 5px var(--alt-color);
     background-color: var(--second-bg-color);
@@ -1472,72 +1553,4 @@ border-radius: 3px
   border-radius: 30px; 
 }
 
-/* =================================Pre loader======================================
-.loader {
-  margin: 0 auto;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--bg-color);
-  transition: all 1s ease;
-}
 
-.loader-text {
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 99999;
-}
-
-.loading {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 70pt;
-  text-align: center;
-  height: 120px;
-  line-height: 110px;
-  display: block;
-}
-
-.wave {
-  background-image: url("https://th.bing.com/th/id/R.9d1db220e8a1f80f30ad15288e513220?rik=OjDVp9imKB7ZRw&riu=http%3a%2f%2fil8.picdn.net%2fshutterstock%2fvideos%2f21678091%2fthumb%2f10.jpg%3fi10c%3dimg.resize(height%3a160)&ehk=sdWi1QtpDJe4JFX%2fLWZYCZRTMf1UKIh8qEHAoxqNjHk%3d&risl=&pid=ImgRaw&r=0");
-  /* -moz-background-clip: text; */
-  /* -webkit-background-clip: text;
-  -o-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: wave-animation 1s infinite linear, loading-animation 10s infinite linear alternate;
-  background-size: 200px 100px;
-  background-repeat: repeat-x;
-  opacity: 1;
-}
-
-@keyframes wave-animation {
-  0% {
-      background-position: 0 bottom;
-  }
-  100% {
-    background-position: 200px bottom;
-  }
-}
-
-@keyframes loading-animation{
-  0% {
-    background-size: 200px 0;
-  }
-  100% {
-    background-size: 200px 200px;
-  }
-}  
-
- .preload-finish{
-  opacity: 0;
-  pointer-events: none;
-} */
