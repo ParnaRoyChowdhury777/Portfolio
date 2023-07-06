@@ -1241,6 +1241,11 @@ span {
 .layer h3 {
   font-weight: 700;
   margin-bottom: 20px;
+  color: #efefef;
+}
+
+.layer p{
+  color: #efefef;
 }
 
 .layer a {
