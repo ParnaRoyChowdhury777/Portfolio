@@ -35,23 +35,23 @@
   }
 
   .skills .container{
-    background-color: #d1a7c6;
+    background-color: #e885aa;
   }
 
   .skills .container .base {
-    background-color: #5c05355e;
+    background-color: #c87e9fc4;
   }
   
   .skills .container .bar-container .bar{
-    background-color: #8e126080;
+    background-color: #cf1538bf;
   }
 
   .skills .container .bar-container .bar::before{
-    background-color: #86115778;
+    background-color: #c40a2d78;
   }
 
   .skills .container .bar-container .bar::after{
-    background-color: #a6196878 ;
+    background-color: #c40a2d78 ;
   }
 
   .achievements-container .achievements-box:nth-child(1):before,
