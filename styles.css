@@ -30,6 +30,12 @@
     display: block;
   }
 
+  .toggleSwitch{
+    position: relative;
+    bottom: 305vw;
+    left: 36vw;
+  }
+
   .home .home-image #dark {
     display: none;
   }
