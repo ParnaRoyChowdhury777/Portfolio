@@ -57,19 +57,19 @@
   .achievements-container .achievements-box:nth-child(1):before,
 .achievements-container .achievements-box:nth-child(1):after
 {
-    background: linear-gradient(315deg, #eaa3c7, #fad1e6);
+    background: linear-gradient(315deg, #f5578d, #edacc2);
 }
 
 .achievements-container .achievements-box:nth-child(2):before,
 .achievements-container .achievements-box:nth-child(2):after
 {
-    background: linear-gradient(315deg, #eaa3c7, #fad1e6);
+    background: linear-gradient(315deg, #f5578d, #edacc2);
 }
 
 .achievements-container .achievements-box:nth-child(3):before,
 .achievements-container .achievements-box:nth-child(3):after
 {
-    background: linear-gradient(315deg, #eaa3c7, #fad1e6);
+    background: linear-gradient(315deg, #f5578d, #edacc2);
 }
 
 @media (max-width: 420px){
