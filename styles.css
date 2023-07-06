@@ -83,6 +83,12 @@
  .home-image #light {
   margin-top: 7rem;
 }
+
+.achievements-container .achievements-box:nth-child(3):before,
+.achievements-container .achievements-box:nth-child(3):after
+{
+    background: linear-gradient(315deg, #f5578d, #edacc2);
+}
 }
 
 }
