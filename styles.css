@@ -1238,13 +1238,13 @@ span {
   transition: height 0.5s;
 }
 
-.layer h3 {
+.work .layer h3 {
   font-weight: 700;
   margin-bottom: 20px;
   color: #efefef;
 }
 
-.layer p{
+.work .layer p{
   color: #efefef;
 }
 
