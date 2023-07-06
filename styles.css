@@ -33,7 +33,9 @@
   .home .home-image #dark {
     display: none;
   }
+}
 
+.light-theme {
   .skills .container{
     background-color: #e885aa;
   }
