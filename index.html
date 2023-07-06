@@ -3,21 +3,37 @@
 
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hi, this is PARNA</title>
-  <link rel="icon" type="image/x-icon" href="/Assets/Images/favicon.ico.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hi, this is PARNA</title>
+        <link rel="icon" type="image/x-icon" href="/Assets/Images/favicon.ico.png">
 
-  <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css">
 
 
-  <!--box icons-->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!--box icons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+                integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer">
+                </script>
 </head>
 
 
-<body> 
+<body>
+
+<!-- onload="preloaderfunction()"-->
+
+  <!--preloader design
+         <div class="loader" id="loader">
+          <div class="loader-text">
+            <div class="loading wave">
+              PARNA
+            </div>
+         </div>
+         </div>
+  preloader design ends-->
   
   <!--header design-->
   <header class="header">
@@ -33,9 +49,9 @@
     </nav>
   </header>
   
+
   
-  
-  
+
   <!-- home-section design -->
   <section class="home" id="home">
     <div class="home-content">
@@ -45,77 +61,84 @@
       <p>Welcome to my Portfolio Website. I am a passionate and ambitious Computer Engineering student currently in my
         second year of study. With a deep-rooted love for technology and a drive for continuous learning, I am
         constantly seeking new opportunities to expand my knowledge and skills in this ever-evolving field.</p>
-        <div class="social-media">
-          <a href="https://www.facebook.com/parna.roychowdhury777" target="_blank"><i class='bx bxl-facebook'></i></a>
-          <a href="https://www.linkedin.com/in/parna-roy-chowdhury-756331256/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-          <a href="https://github.com/ParnaRoyChowdhury777" target="_blank"><i class='bx bxl-github'></i></a>
-          <a href="https://www.instagram.com/parna.roychowdhury.777/" target="_blank"><i class='bx bxl-instagram'></i></a>
-        </div>
-        <a href="#about" class="btn">Know More</a>
+      <div class="social-media">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
       </div>
-      <div class="home-image">
-        <img src="Assets/Images/self_image.svg" alt="PARNA" id="dark">
-        <img src="/Assets/Images/themepic.svg" alt="PRC" id="light">
-      </div>
-      <div class="toggleSwitch">
-      <i class='bx bx-sun' id="themesun"></i>
-      <i class='bx bx-moon' id="thememoon"></i>
-      </div>
+      <a href="#about" class="btn">Know More</a>
+    </div>
+    <div class="home-image">
+      <img src="Assets/Images/self_image.svg" alt="PARNA">
+    </div>
   </section>
 
 
-  <!--about section design-->
-  <section class="about" id="about">
-    <h2 class="heading">About <span>Me</span></h2>
-    <div class="about-container">
-    <div class="about-img" data-aos="fade-left">
-      <img src="/Assets/Images/self_image1.jpeg" alt="PARNA">
-      <span class="circle-spin"></span>
-    </div>
-    <div class="about-content">
-      <p id="abt">My journey in Computer Engineering has equipped me with a strong foundation in programming languages such as C
-        and C++, as well as hands-on experience with various software development tools and methodologies. From building
-        web applications to exploring data structures and algorithms, I have enjoyed every aspect of my coursework and
-        have consistently achieved outstanding results.<br>Beyond the
-          classroom, I actively engage in personal projects and participate in coding competitions to challenge myself
-          and further refine my problem-solving abilities. These experiences have not only honed my technical skills but
-          have also fostered my ability to work effectively in a team and adapt to new environments.<br>
+        <!--about section design-->
+        <section class="about" id="about">
+                <h2 class="heading">About <span>Me</span></h2>
+                <div class="about-container">
+                        <div class="about-img" data-aos="fade-left">
+                                <img src="/Assets/Images/self_image1.jpeg" alt="PARNA">
+                                <span class="circle-spin"></span>
+                        </div>
+                        <div class="about-content">
+                                <p id="abt">My journey in Computer Engineering has equipped me with a strong foundation
+                                        in programming languages such as C
+                                        and C++, as well as hands-on experience with various software development tools
+                                        and methodologies. From building
+                                        web applications to exploring data structures and algorithms, I have enjoyed
+                                        every aspect of my coursework and
+                                        have consistently achieved outstanding results.<br>Beyond the
+                                        classroom, I actively engage in personal projects and participate in coding
+                                        competitions to challenge myself
+                                        and further refine my problem-solving abilities. These experiences have not only
+                                        honed my technical skills but
+                                        have also fostered my ability to work effectively in a team and adapt to new
+                                        environments.<br>
 
-          I am eager to apply my knowledge and contribute to meaningful projects that make a positive impact on
-          society.<br>
+                                        I am eager to apply my knowledge and contribute to meaningful projects that make
+                                        a positive impact on
+                                        society.<br>
 
-          As I continue my educational journey, I am open to exciting internships and research opportunities that will
-          allow me to further explore my interests in areas such as artificial intelligence, cybersecurity, and software
-          development.<br>
+                                        As I continue my educational journey, I am open to exciting internships and
+                                        research opportunities that will
+                                        allow me to further explore my interests in areas such as artificial
+                                        intelligence, cybersecurity, and software
+                                        development.<br>
 
-          Thank you for visiting my portfolio website. I invite you to explore my projects and achievements, and I look
-          forward to connecting with like-minded individuals and organizations to create innovative solutions together.
+                                        Thank you for visiting my portfolio website. I invite you to explore my projects
+                                        and achievements, and I look
+                                        forward to connecting with like-minded individuals and organizations to create
+                                        innovative solutions together.
 
-        </p>
+                                </p>
 
       
       </div>
     </div>
-    <a href="https://drive.google.com/file/d/1q9q6ipczUob7K4kuNBE1rj7kIAksk7Re/view?usp=drive_link" target="_blank" class="about-btn">Download CV</a>
+    <a href="#" class="about-btn">Download CV</a>
   </section>
 
 
-  <!--Education section design-->
-  <section class="education" id="education">
-    <h2 class="heading">My <span>Education</span></h2>
-    <ul class="line">
-      <li>
-        <div id="school" class="cont" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="linear
+        <!--Education section design-->
+        <section class="education" id="education">
+                <h2 class="heading">My <span>Education</span></h2>
+                <ul class="line">
+                        <li>
+                                <div id="school" class="cont" data-aos="slide-left" data-aos-duration="1000"
+                                        data-aos-easing="linear
         ">
           <h3>Bidya Bharati Girls' High School</h3>
           <p>
             I studied in one of the best English medium girls' school(affiliated to West Bengal Board) in Kolkata, West
             Bengal. At my alma mater, academic excellence thrived and I proudly emerged as a consistent topper, driven
             by the unparalleled support and encouragement from my teachers and mentors.<br><br>
-            <a href="http://bidyabharatighs.in/index.php" target="_blank" class="btn" id="education-btn">Know more</a><br><br>
-            <span>Class 10 Grade Card : <a href="https://drive.google.com/file/d/1ONW7izyk5L52JLOYbg9zkFgyAPHImEgB/view?usp=drive_link" target="_blank" class="result">Click here<i
+            <a href="#" class="btn" id="education-btn">Know more</a><br><br>
+            <span>Class 10 Grade Card : <a href="#" class="result">Click here<i
                   class='bx bxs-download'></i></a></span><br><br>
-            <span>Class 12 Grade Card : <a href="https://drive.google.com/file/d/1OPic7kXIZZYyxiWK9AxIJq0I80kZEU72/view?usp=drive_link" target="_blank" class="result">Click here<i class='bx bxs-download'></i></a>
+            <span>Class 12 Grade Card : <a href="#" class="result">Click here<i class='bx bxs-download'></i></a>
           </p>
           <time>2007 - 2022</time>
         </div>
@@ -129,9 +152,9 @@
             this renowned college of Kolkata. I am fortunate to be part of a vibrant community that fosters innovation,
             critical thinking, and holistic growth, empowering me to shape a successful future in the field of
             technology.<br><br>
-            <a href="https://www.ticollege.ac.in/" target="_blank" class="btn" id="education-btn">Know more</a>
+            <a href="#" class="btn" id="education-btn">Know more</a>
             <br><br>
-            <span>Semester 1 Grade Card : <a href="https://drive.google.com/file/d/1OmI-ZwAlD_5_ndcDH8Uoevv8W6JwjgCk/view?usp=drive_link" target="_blank" class="result">Click here<i
+            <span>Semester 1 Grade Card : <a href="#" class="result">Click here<i
                   class='bx bxs-download'></i></a></span>
           </p>
           <time>2022 - 2026</time>
@@ -141,60 +164,60 @@
   </section>
 
 
-  <!--Skills section design-->
-  <section class="skills" id="skills">
-    <h2 class="heading">My <span>Skills</span></h2>
-    <h3>Technical Skills</h3>
-    <div class="container">
-      <div class="background_grid">
-        <span class="line" value="100%"></span>
-        <span class="line" value="80%"></span>
-        <span class="line" value="60%"></span>
-        <span class="line" value="40%"></span>
-        <span class="line" value="20%"></span>
-        <span class="line" value="0%"></span>
-      </div>
-      <div class="base"></div>
+        <!--Skills section design-->
+        <section class="skills" id="skills">
+                <h2 class="heading">My <span>Skills</span></h2>
+                <h3>Technical Skills</h3>
+                <div class="container">
+                        <div class="background_grid">
+                                <span class="line" value="100%"></span>
+                                <span class="line" value="80%"></span>
+                                <span class="line" value="60%"></span>
+                                <span class="line" value="40%"></span>
+                                <span class="line" value="20%"></span>
+                                <span class="line" value="0%"></span>
+                        </div>
+                        <div class="base"></div>
 
-      <div class="bar-container">
-        <div class="bar" style="max-height: 90%;"></div>
-        <div class="bar" style="max-height: 65%;"></div>
-        <div class="bar" style="max-height: 10%;"></div>
-        <div class="bar" style="max-height: 85%;"></div>
-        <div class="bar" style="max-height: 50%;"></div>
-        <div class="bar" style="max-height: 55%;"></div>
-      </div>
+                        <div class="bar-container">
+                                <div class="bar" style="max-height: 90%;"></div>
+                                <div class="bar" style="max-height: 65%;"></div>
+                                <div class="bar" style="max-height: 10%;"></div>
+                                <div class="bar" style="max-height: 85%;"></div>
+                                <div class="bar" style="max-height: 50%;"></div>
+                                <div class="bar" style="max-height: 55%;"></div>
+                        </div>
 
-      <div class="titles">
-        <span id="html">HTML</span>
-        <span id="css">CSS</span>
-        <span id="javascript">Javascript&nbsp;&nbsp;</span>
-        <span id="c">&nbsp;&nbsp;C</span>
-        <span id="cplus">C++</span>
-        <span id="python">Python</span>
-      </div>
-    </div>
-    <br><br>
-    <h3>Professional Skills</h3>
+                        <div class="titles">
+                                <span id="html">HTML</span>
+                                <span id="css">CSS</span>
+                                <span id="javascript">Javascript&nbsp;&nbsp;</span>
+                                <span id="c">&nbsp;&nbsp;C</span>
+                                <span id="cplus">C++</span>
+                                <span id="python">Python</span>
+                        </div>
+                </div>
+                <br><br>
+                <h3>Professional Skills</h3>
 
-    <div class="profession">
+                <div class="profession">
 
-      <div class="circle" id="adjust" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-        style="--value: 100"></div>
-      <div class="text">Hardworking</div>
-      <div class="circle" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"
-        style="--value: 88"></div>
-      <div class="text">Communication</div>
-      <div class="circle" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"
-        style="--value: 92"></div>
-      <div class="text" id="diligent">&nbsp;&nbsp;&nbsp;Diligent</div>
-      <div class="circle" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"
-        style="--value: 94"></div>
-      <div class="text" id="teamwork">&nbsp;&nbsp;&nbsp;Teamwork</div>
+                        <div class="circle" id="adjust" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                aria-valuemax="100" style="--value: 100"></div>
+                        <div class="text">Hardworking</div>
+                        <div class="circle" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"
+                                style="--value: 88"></div>
+                        <div class="text">Communication</div>
+                        <div class="circle" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"
+                                style="--value: 92"></div>
+                        <div class="text" id="diligent">&nbsp;&nbsp;&nbsp;Diligent</div>
+                        <div class="circle" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"
+                                style="--value: 94"></div>
+                        <div class="text" id="teamwork">&nbsp;&nbsp;&nbsp;Teamwork</div>
 
-    </div>
+                </div>
 
-  </section>
+        </section>
 
   <!--Achievements section design-->
   <section class="achievements" id="achievements">
@@ -205,7 +228,7 @@
         <div class="achievements-content">
           <h2>Tech Wing Member</h2>
           <p>I am currently a member of the Tech Wing of the esteemed club, IIC of our college.</p>
-          <a href="https://www.iictmsl.com/" target="_blank">Know More</a>
+          <a href="#">Know More</a>
         </div>
       </div>
       <div class="achievements-box">
@@ -213,7 +236,7 @@
         <div class="achievements-content">
           <h2>PR and Outreach Wing Member</h2>
           <p>I am currently a member of the PR and Outreach Wing of the esteemed club, IIC of our college.</p>
-          <a href="https://www.iictmsl.com/" target="_blank">Know More</a>
+          <a href="#">Know More</a>
         </div>
       </div>
       <div class="achievements-box">
@@ -222,7 +245,7 @@
           <h2>Junior Coder</h2>
           <p>I have solved many problems in various platforms like Hackerrank, Codechef, Leetcode and Geeks for Geeks.
           </p>
-          <a href="https://auth.geeksforgeeks.org/user/roychowdhurnzxb" target="_blank">Know More</a>
+          <a href="#">Know More</a>
         </div>
       </div>
     </div>
@@ -234,7 +257,7 @@
       <div class="layer">
         <h3>JBNSTS Award</h3>
         <p>This is a National Science Talent Search Award which recognizes exceptional young minds in the field of science and aims to foster scientific curiosity in the next generation of scientific innovators.</p>
-          <a href="https://drive.google.com/file/d/1KS5xyggfr8A6AQSTTO5pxSudOXlI7oBW/view?usp=drive_link" target="_blank"><i class='bx bx-link-external'></i></a>
+          <a href="#"><i class='bx bx-link-external'></i></a>
       </div>
     </div>
     <div class="work">
@@ -242,7 +265,7 @@
       <div class="layer">
         <h3>Global Award 2020</h3>
         <p>I received this award as a recognition of my class X board examination results.</p>
-          <a href="https://drive.google.com/file/d/1ixyWkg90Dxc3WipCEN70NhE4yjvq75ua/view?usp=drive_link" target="_blank"><i class='bx bx-link-external'></i></a>
+          <a href="#"><i class='bx bx-link-external'></i></a>
           </div>
     </div>
     <div class="work">
@@ -250,65 +273,70 @@
       <div class="layer">
         <h3>ESCS291-C-CODES</h3>
         <p>I created a github repository containing all the C codes I practised in my 2nd semester.</p>
-          <a href="https://github.com/ParnaRoyChowdhury777/ESCS291-C-CODES" target="_blank"><i class='bx bx-link-external'></i></a>
+          <a href="#"><i class='bx bx-link-external'></i></a>
       </div>
     </div>
    </div>
   </section>
 
 
-  <!--Contact section design-->
-  <section class="contact" id="contact">
-    <div class="contacttitle">
-      <h2 class="heading" id="heading">Get in <span>Touch</span></h2>
-    </div>
+        <!--Contact section design-->
+        <section class="contact" id="contact">
+                <div class="contacttitle">
+                        <h2 class="heading" id="heading">Get in <span>Touch</span></h2>
+                </div>
 
-    <div class="contact-box">
-      <div class="contact-form">
-        <h3>Thanks for your visit!!</h3>
-        <form action = "https://formspree.io/f/moqoakvw" target="_blank" method="post">
-          <div class="formBox">
-            <div class="row50">
-              <div class="inputBox">
-                <span>First Name</span>
-                <input type="text" placeholder="First Name" id="firstname" name="First Name : ">
-              </div>
-              <div class="inputBox">
-                <span>Last Name</span>
-                <input type="text" placeholder="Last Name" id="lastname" name="Last Name : ">
-              </div>
-            </div>
+                <div class="contact-box">
+                        <div class="contact-form">
+                                <h3>Thanks for your visit!!</h3>
+                                <form action="https://formspree.io/f/moqoakvw" target="_blank" method="post">
+                                        <div class="formBox">
+                                                <div class="row50">
+                                                        <div class="inputBox">
+                                                                <span>First Name</span>
+                                                                <input type="text" placeholder="First Name"
+                                                                        id="firstname" name="First Name : ">
+                                                        </div>
+                                                        <div class="inputBox">
+                                                                <span>Last Name</span>
+                                                                <input type="text" placeholder="Last Name" id="lastname"
+                                                                        name="Last Name : ">
+                                                        </div>
+                                                </div>
 
-            <div class="row50">
-              <div class="inputBox">
-                <span>Email ID</span>
-                <input type="email" placeholder="Email ID" id="email" name="Email : ">
-              </div>
-              <div class="inputBox">
-                <span>Phone No.</span>
-                <input type="text" placeholder="Phone No." id="phone" name="Phone No. : ">
-              </div>
-            </div>
+                                                <div class="row50">
+                                                        <div class="inputBox">
+                                                                <span>Email ID</span>
+                                                                <input type="email" placeholder="Email ID" id="email"
+                                                                        name="Email : ">
+                                                        </div>
+                                                        <div class="inputBox">
+                                                                <span>Phone No.</span>
+                                                                <input type="text" placeholder="Phone No." id="phone"
+                                                                        name="Phone No. : ">
+                                                        </div>
+                                                </div>
 
-            <div class="row100">
-              <div class="inputBox">
-                <span>Message</span>
-                <textarea id="textarea" cols="30" rows="10" placeholder="Write a message" name="Message : "></textarea>
-              </div>
-            </div>
-      
-              </div>
-              <button type="submit" class="contact-btn">Send</button>
-        </form>
-      </div>
+                                                <div class="row100">
+                                                        <div class="inputBox">
+                                                                <span>Message</span>
+                                                                <textarea id="textarea" cols="30" rows="10"
+                                                                        placeholder="Write a message"
+                                                                        name="Message : "></textarea>
+                                                        </div>
+                                                </div>
+
+                                        </div>
+                                        <button type="submit" class="contact-btn">Send</button>
+                                </form>
+                        </div>
 
 
-      <div class="contact-map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3721428.76450039!2d87.85113775!3d24.37407435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1687895789639!5m2!1sen!2sin"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+                        <div class="contact-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3721428.76450039!2d87.85113775!3d24.37407435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1687895789639!5m2!1sen!2sin"
+                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
 
 
       <div class="contact-info">
@@ -327,10 +355,10 @@
             <a href="tel:+91 6290040136">+91 6290040136</a>
           </div>
           <ul class="sci">
-            <li><a href="https://www.facebook.com/parna.roychowdhury777" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-            <li><a href="https://www.linkedin.com/in/parna-roy-chowdhury-756331256/" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-            <li><a href="https://github.com/ParnaRoyChowdhury777" target="_blank"><i class='bx bxl-github'></i></a></li>
-            <li><a href="https://www.instagram.com/parna.roychowdhury.777/" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+            <li><a href="#"><i class='bx bxl-github'></i></a></li>
+            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
           </ul>
         </div>
       </div>
@@ -338,53 +366,56 @@
   </section>
 
 
-  <!--Footer section-->
-  <footer class="footer">
-    <div class="footer-text">
-      <p>Copyright &copy; 2023. Made with <i class='bx bxs-heart' style='color:#ff0000'></i> by Parna Roy Chowdhury |
-        <a href="https://drive.google.com/file/d/1OY1YIn_2DCdCfQ8lkODUG_fNf0xNR64z/view?usp=drive_link" target="_blank">All Rights Reserved.</a></p>
-    </div>
-    <div class="footer-icontop">
-      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-    </div>
+        <!--Footer section-->
+        <footer class="footer">
+                <div class="footer-text">
+                        <p>Copyright &copy; 2023. Made with <i class='bx bxs-heart' style='color:#ff0000'></i> by Parna
+                                Roy Chowdhury |
+                                <a href="https://drive.google.com/file/d/1OY1YIn_2DCdCfQ8lkODUG_fNf0xNR64z/view?usp=drive_link"
+                                        target="_blank">All Rights Reserved.</a>
+                        </p>
+                </div>
+                <div class="footer-icontop">
+                        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+                </div>
 
-  </footer>
+        </footer>
 
 
 
 
 
-  <script src="script.js"></script>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    var typed = new Typed('.multiple-text', {
-      strings: ['Frontend Developer', 'UI-UX Designer', 'AI Enthusiast', 'Junior coder'],
-      typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 1000,
-      loop: true
-    });
-  </script>
-<script>
-  ScrollReveal({
-  reset: true,
-  distance: '80px',
-  duration: 2000,
-  delay: 200 
- });
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+                var typed = new Typed('.multiple-text', {
+                        strings: ['Frontend Developer', 'UI-UX Designer', 'AI Enthusiast', 'Junior coder'],
+                        typeSpeed: 100,
+                        backSpeed: 100,
+                        backDelay: 1000,
+                        loop: true
+                });
+        </script>
+        <script>
+                ScrollReveal({
+                        reset: true,
+                        distance: '80px',
+                        duration: 2000,
+                        delay: 200
+                });
 
- ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
- ScrollReveal().reveal('.home-image, .container, .profession, .work-list, .contact-box, #abt', { origin: 'bottom' });
- ScrollReveal().reveal('.home-content h1', { origin: 'left' });
- ScrollReveal().reveal('.home-content p, .about-content, #education ul li:first child', { origin: 'right' });
- 
-</script>
+                ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+                ScrollReveal().reveal('.home-image, .container, .profession, .work-list, .contact-box, #abt', { origin: 'bottom' });
+                ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+                ScrollReveal().reveal('.home-content p, .about-content, #education ul li:first child', { origin: 'right' });
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+        </script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+                AOS.init();
+        </script>
 
 
 <script>
@@ -399,6 +430,3 @@
 </body>
 
 </html>
-
-
-
