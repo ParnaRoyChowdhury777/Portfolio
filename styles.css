@@ -71,6 +71,17 @@
 {
     background: linear-gradient(315deg, #eaa3c7, #fad1e6);
 }
+
+@media (max-width: 420px){
+ .home-image #light{
+  min-width: 400px;
+  border-radius: 50%;
+  margin-top: 3rem;
+}
+ .home-image #light {
+  margin-top: 5rem;
+}
+}
 }
 
 .light-theme #themesun{
@@ -219,12 +230,12 @@
     margin-top: 4.5rem;
   }
 
-  .home-image #dark, .home-image #light{
+  .home-image #dark{
     min-width: 400px;
     border-radius: 50%;
     margin-top: 3rem;
   }
-  .home-image #dark, .home-image #light {
+  .home-image #dark {
     margin-top: 5rem;
   }
 
