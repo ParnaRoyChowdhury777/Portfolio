@@ -1434,7 +1434,7 @@ textarea:hover {
 .contact-info .infoBox div span {
   min-width: 40px;
   height: 40px;
-  color: var(--text-color);
+  color: #efefef;
   background-color: var(--alt-color);
   display: flex;
   justify-content: center;
