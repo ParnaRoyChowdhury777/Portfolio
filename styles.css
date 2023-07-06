@@ -159,10 +159,10 @@
 
   .toggleSwitch{
     position: relative;
-    bottom: 305vw;
+    bottom: 304vw;
     left: 36vw;
   }
-  
+
   section {
     max-width: 100%;
     overflow-x: hidden;
