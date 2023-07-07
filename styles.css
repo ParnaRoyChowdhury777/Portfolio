@@ -25,37 +25,35 @@
   --main-color: #EF0D50;
   --text-color: #d8184b;
   --alt-color: #e75b90;
-
-  .home .home-image #light{
+}
+  .light-theme .home .home-image #light{
     display: block;
   }
 
-  .home .home-image #dark {
+  .light-theme .home .home-image #dark {
     display: none;
   }
-}
 
-.light-theme {
-  .skills .container{
+  .light-theme .skills .container{
     background-color: #e885aa;
   }
 
-  .skills .container .base {
+  .light-theme .skills .container .base {
     background-color: #c87e9fc4;
   }
   
-  .skills .container .bar-container .bar{
+  .light-theme .skills .container .bar-container .bar{
     background-color: #cf1538bf;
   }
 
-  .skills .container .bar-container .bar::before{
+  .light-theme .skills .container .bar-container .bar::before{
     background-color: #c40a2d78;
   }
 
-  .skills .container .bar-container .bar::after{
+  .light-theme .skills .container .bar-container .bar::after{
     background-color: #c40a2d78 ;
   }
-}
+
   .light-theme .achievements-container .achievements-box:nth-child(1):before,
    .light-theme .achievements-container .achievements-box:nth-child(1):after
 {
