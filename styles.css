@@ -55,25 +55,25 @@
   .skills .container .bar-container .bar::after{
     background-color: #c40a2d78 ;
   }
-
-   .achievements-container .achievements-box:nth-child(1):before,
-   .achievements-container .achievements-box:nth-child(1):after
+}
+  .light-theme .achievements-container .achievements-box:nth-child(1):before,
+   .light-theme .achievements-container .achievements-box:nth-child(1):after
 {
     background: linear-gradient(315deg, #f5578d, #edacc2);
 }
 
-.achievements-container .achievements-box:nth-child(2):before,
-.achievements-container .achievements-box:nth-child(2):after
+.light-theme .achievements-container .achievements-box:nth-child(2):before,
+.light-theme .achievements-container .achievements-box:nth-child(2):after
 {
     background: linear-gradient(315deg, #f5578d, #edacc2);
 }
 
-.achievements-container .achievements-box:nth-child(3):before,
-.achievements-container .achievements-box:nth-child(3):after
+.light-theme .achievements-container .achievements-box:nth-child(3):before,
+.light-theme .achievements-container .achievements-box:nth-child(3):after
 {
     background: linear-gradient(315deg, #f5578d, #edacc2);
 }
-
+.light-theme{
 @media (max-width: 420px){
  .home-image #light{
   min-width: 400px;
