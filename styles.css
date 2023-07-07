@@ -56,7 +56,7 @@
     background-color: #c40a2d78 ;
   }
 
-  .achievements-container .achievements-box:nth-child(1):before,
+  .light-theme .achievements-container .achievements-box:nth-child(1):before,
 .achievements-container .achievements-box:nth-child(1):after
 {
     background: linear-gradient(315deg, #f5578d, #edacc2);
