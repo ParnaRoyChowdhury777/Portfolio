@@ -71,20 +71,20 @@
 {
     background: linear-gradient(315deg, #f5578d, #edacc2);
 }
-.light-theme{
-@media (max-width: 420px){
+
+.light-theme @media (max-width: 420px){
  .home-image #light{
   min-width: 400px;
   border-radius: 50%;
   margin-top: 3rem;
 }
- .home-image #light {
+ .light-theme .home-image #light {
   margin-top: 7rem;
 }
 
 }
 
-}
+
 
 .light-theme #themesun{
   display: none
