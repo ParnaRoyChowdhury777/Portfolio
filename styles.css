@@ -458,6 +458,7 @@ body {
   height: 70px;
   padding: 2rem 9%;
   background: var(--bg-color);
+  opacity: 0.2;
   display: flex;
   justify-content: space-between;
   align-items: center;
